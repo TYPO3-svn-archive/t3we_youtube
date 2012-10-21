@@ -1,0 +1,23 @@
+plugin.t3we_youtube {
+	
+	# cat=plugin.t3we_youtube; type=string; label=title: Set YoyTube video player title
+	title = YouTube Video
+		
+	# cat=plugin.t3we_youtube; type=options[dark,light]; label=theme: Set color theme for player
+	theme = dark
+
+	# cat=plugin.t3we_youtube; type=options[red,white]; label=color: Set progress bar color
+	color = red
+	
+	# cat=plugin.t3we_youtube; type=boolean; label=autohide: Autohide controls and video information if shown
+	autohide = 0
+
+	# cat=plugin.t3we_youtube; type=boolean; label=showinfo: Show video information like 'title', 'share', 'more info'
+	showinfo = 0
+
+	# cat=plugin.t3we_youtube; type=boolean; label=showrelated: Show related videos
+	showrelated = 0
+	
+	# cat=plugin.t3we_youtube; type=boolean; label=liquid: Set video width 100%, keeping constant ratio. Load some JavaScript and jQuery will be needed!
+	liquid = 0
+}

@@ -1,0 +1,31 @@
+
+tt_content.youtube = COA
+tt_content.youtube {
+  10 = < lib.stdheader
+  20 = TEXT
+  20.value ( 
+  	<figure>
+  		<div class="youtubeVideo">
+  			<iframe 
+  			  title="{$plugin.t3we_youtube.title}"
+  			  width="{t3datastructure : pi_flexform->width}"
+  			  height="{t3datastructure : pi_flexform->height}"
+  			  src="http://www.youtube.com/embed/{t3datastructure : pi_flexform->youtubeID}?theme={$plugin.t3we_youtube.theme}&amp;color={$plugin.t3we_youtube.color}&amp;autohide={$plugin.t3we_youtube.autohide}&amp;showinfo={$plugin.t3we_youtube.showinfo}&amp;rel={$plugin.t3we_youtube.showrelated}&amp;wmode=opaque"
+  			  >
+  			  </iframe>
+  		</div>
+  	</figure>
+  )
+  20.insertData = 1
+}
+
+[code="typoscript"]
+  [globalVar = LIT:1 = {$plugin.t3we_youtube.liquid}]
+    page.includeJS.t3we_youtube = EXT:t3we_youtube/res/js/jquery.fitvids.js 
+    page.jsFooterInline.201234 = COA
+    page.jsFooterInline.201234 {
+	  10 = TEXT
+	  10.value = $(".youtubeVideo").fitVids();
+    }
+  [end]
+[/code]

@@ -1,0 +1,2 @@
+# cat=basic/int; type=boolean; label=Include Default Content Elements: This causes the youtube content element to be included. By disabling this setting you can use the extension as an API without having unwanted content elements.
+includeDefaultContentElements = 1

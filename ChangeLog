@@ -1,0 +1,6 @@
+2012-20-10  Tanel Põld, T3WE //
+
+	* forked from wec_contentelements and removed other content elements besides youtube
+	* added default TypoScript template
+	* added full constant editor control over YouTube player look
+	* added jquery.fitvids.js by Chris Coyier and Dave Rupert to set video with equal to outer container, keeping proper aspect ratio
